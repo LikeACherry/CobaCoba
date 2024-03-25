@@ -1,841 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- // CSS FILES // -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./vendor/slick/slick.css">
+   <link rel="stylesheet" href="./vendor/slick/slick-theme.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <title>Codashop - Indonesia</title>
+</head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap-4.1.1-dist/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-    <!-- OWl Carousel CSS Files -->
-    <link rel="stylesheet" href="js/plugins/owl-carousel/owl.carousel.css" />
-    <link rel="stylesheet" href="js/plugins/owl-carousel/owl.theme.css" />
-    <link rel="stylesheet" href="js/plugins/owl-carousel/owl.transitions.css" />
-    <!-- ANIMATE CSS -->
-    <link rel="stylesheet" href="css/animate.css" />
-    <!-- Video Pop Up Plugin -->
-    <link
-      rel="stylesheet"
-      href="js/plugins/YouTube_PopUp-master/YouTubePopUp.css"
-    />
-    <!-- PRELOADER -->
-    <link rel="stylesheet" href="css/preloader.css" />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Jasa Pembuatan Website</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <style>
-      .act-btn {
-        display: block;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-        font-weight: bold;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        text-decoration: none;
-        transition: ease all 0.3s;
-        position: fixed;
-        right: 30px;
-        bottom: 30px;
-        text-decoration: none !important;
-        z-index: 9;
-      }
-    </style>
-  </head>
+<body>
 
-  <body data-spy="scroll" data-target=".navbar">
-    
-    <a
-      href="https://wa.me/6281271449921?text=Hai Admin%20Mau%20Konsultasi%20Bikin%20Website%20di%20Sahredev"
-      class="bg-success act-btn"
-    >
-    <i class="bi bi-whatsapp"></i>
-    </a>
+   <!-- Notification -->
+   <div class="notification" id="notif">
+      <div class="notification__container">
+         <i class="fas fa-bell"></i>
+      </div>
+   </div>
 
-    <header id="home">
-      <!-- /// Navbar /// -->
-
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <!-- // Brand // -->
-
-          <a class="navbar-brand" href="#">
-            <img src="logo.png" width="30px" alt="" />
-            Sahredev
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="material-icons">menu</i>
-          </button>
-          <div
-            style="padding: 0"
-            class="collapse navbar-collapse"
-            id="navbarNav"
-          >
-            <!-- / NavLinks / -->
-
-            <ul class="nav navbar-nav ml-auto my-4">
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#services">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#prices">Prices</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="desain.html">Desain</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contak">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!-- /// BANNER /// -->
-      <div class="banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 offset-md-2">
-              <!-- // Caption // -->
-              <div class="caption">
-                <h2 class="text-white">
-                  Kembangkan Websitemu <br />
-                  Bersama Sahredev
-                </h2>
-                <p class="sub">
-                  Jasa pembuatan web desain custom premium, web bisnis, web
-                  organisasi, company profile, siakad, absensi online, aplikasi
-                  akuntansi, e-catalogue, e-learning, CBT, DLL
-                </p>
-                <a
-                  style="border-radius: 25px"
-                  target="_blank"
-                  class="btn btn-primary"
-                  href="https://nabilchen96.github.io/nabil-portfolio/portfolio.html"
-                  >Portfolio</a
-                >
-                <!-- / Macbook IMG / -->
-                <img
-                  class="img-fluid mx-auto wow fadeInUp"
-                  data-wow-duration="1s"
-                  data-wow-delay=".3s"
-                  src="imgs/macbook.png"
-                  alt="macbook"
-                />
-              </div>
+   <!-- Header -->
+   <header class="header">
+      <div class="header__container">
+         <div class="header__nav">
+            <div class="logo">
+               <img src="./img/codashop-logo.png" class="logo__img" alt="logo">
+               <p class="logo__slogan">
+                  Cara tercepat dan termudah untuk pembelian kredit permainan.
+               </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- ==============================================
-    ABOUT 
-    =============================================== -->
-
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-md-4 wow bounceIn mb-5"
-            data-wow-duration=".5s"
-            data-wow-delay=".2s"
-          >
-            <!-- // Title // -->
-            <i style="font-size: 3rem" class="bi bi-joystick"></i>
-            <br />
-            <h4>Beragam Desain</h4>
-            <!-- / Caption / -->
-            <p>
-              kami menawarkan beragam pilihan desain yang dapat disesuaikan
-              dengan keinginan bisnis Anda.
-            </p>
-          </div>
-          <div
-            class="col-md-4 wow bounceIn mb-5"
-            data-wow-duration=".5s"
-            data-wow-delay=".4s"
-          >
-            <i class="bi bi-stopwatch" style="font-size: 3rem"></i>
-            <h4>Pengerjaan Cepat</h4>
-            <!-- / Caption / -->
-            <p>
-              Pengerjaan website mulai dari 2 hari kerja saja, tergantung fitur
-              dan permintaan client.
-            </p>
-          </div>
-          <div
-            class="col-md-4 wow bounceIn mb-5"
-            data-wow-duration=".5s"
-            data-wow-delay=".6s"
-          >
-            <i class="bi bi-window" style="font-size: 3rem"></i>
-            <br />
-            <h4>Semua Website</h4>
-            <!-- / Caption / -->
-            <p>
-              Website Berita, Companya Profile, Absensi Online, Aplikasi Kasir,
-              SIAKAD, Aplikasi Akuntansi, E-Katalog, DLL
-            </p>
-          </div>
-          <div
-            class="col-md-4 wow bounceIn mb-5"
-            data-wow-duration=".5s"
-            data-wow-delay=".6s"
-          >
-            <i class="bi bi-boxes" style="font-size: 3rem"></i>
-            <br />
-            <h4>Custom Fitur</h4>
-            <!-- / Caption / -->
-            <p>
-              Integrasi Sosmed, Integrasi API, Peta Online, Kamera Scanner,
-              Virtual Reality, Payment Gateway, DLL
-            </p>
-          </div>
-          <div
-            class="col-md-4 wow bounceIn mb-5"
-            data-wow-duration=".5s"
-            data-wow-delay=".6s"
-          >
-            <i class="bi bi-wallet" style="font-size: 3rem"></i>
-            <br />
-            <h4>Harga Terjangkau</h4>
-            <!-- / Caption / -->
-            <p>
-              kami menawarkan harga yang bersahabat di kantong mulai dari di
-              bawah 2 jutaan saja.
-            </p>
-          </div>
-          <div
-            class="col-md-4 wow bounceIn mb-5"
-            data-wow-duration=".5s"
-            data-wow-delay=".6s"
-          >
-            <i class="bi bi-emoji-smile" style="font-size: 3rem"></i>
-            <br />
-            <h4>Garansi & Revisi 1 Minggu</h4>
-            <!-- / Caption / -->
-            <p>
-              kami menyediakan garansi dan revisi selama 1 minggu setelah
-              peluncuran website
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==============================================
-    SERVICES 
-    =============================================== -->
-    <div id="features" style="margin-top: 0; padding-top: 0"></div>
-    <section id="services" style="padding-top: 0">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-md-6 wow fadeInLeft"
-            data-wow-duration=".5s"
-            data-wow-delay=".2s"
-          >
-            <div class="row">
-              <div class="col-lg-6 mb-4">
-                <div
-                  class="card-body"
-                  style="
-                    background-image: linear-gradient(
-                        360deg,
-                        rgb(36, 36, 90),
-                        transparent
-                      ),
-                      url('https://nabilchen96.github.io/nabil-portfolio/gambar/poltekbang.png');
-                    background-position: center;
-                    background-size: cover;
-                    height: 200px;
-                  "
-                ></div>
-                <div style="margin-left: 15px; position: absolute; bottom: 0">
-                  <h5 class="card-title text-white">
-                    <a class="text-white" href="http://poltekbangplg"
-                      >poltekbangplg.ac.id</a
-                    >
-                  </h5>
-                  <p
-                    style="margin-top: -10px; font-size: 12px"
-                    class="text-white"
-                  >
-                    Official Website Palembang Aviation Polytechnic
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-4">
-                <div
-                  class="card-body"
-                  style="
-                    background-image: linear-gradient(
-                        360deg,
-                        rgb(36, 36, 90),
-                        transparent
-                      ),
-                      url('https://nabilchen96.github.io/nabil-portfolio/gambar/cbt.png');
-                    background-position: center;
-                    background-size: cover;
-                    height: 200px;
-                  "
-                ></div>
-                <div style="margin-left: 15px; position: absolute; bottom: 0">
-                  <h5 class="card-title text-white">
-                    <a class="text-white" href="http://cbt.sahretech.com"
-                      >cbt.sahretech.com</a
-                    >
-                  </h5>
-                  <p
-                    style="margin-top: -10px; font-size: 12px"
-                    class="text-white"
-                  >
-                    Online exam simulation apps <br />
-                    for CPNS and P3K tests
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-4">
-                <div
-                  class="card-body"
-                  style="
-                    background-image: linear-gradient(
-                        360deg,
-                        rgb(36, 36, 90),
-                        transparent
-                      ),
-                      url('https://nabilchen96.github.io/nabil-portfolio/gambar/airports.png');
-                    background-position: center;
-                    background-size: cover;
-                    height: 200px;
-                  "
-                ></div>
-                <div style="margin-left: 15px; position: absolute; bottom: 0">
-                  <h5 class="card-title text-white">
-                    <a class="text-white" href="http://airportslab.com"
-                      >airportslab.com</a
-                    >
-                  </h5>
-                  <p
-                    style="margin-top: -10px; font-size: 12px"
-                    class="text-white"
-                  >
-                    Aplikasi Pengujian Material. Uji Civil, Uji Mechanic, dan
-                    Uji Electric
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-4">
-                <div
-                  class="card-body"
-                  style="
-                    background-image: linear-gradient(
-                        360deg,
-                        rgb(36, 36, 90),
-                        transparent
-                      ),
-                      url('https://nabilchen96.github.io/nabil-portfolio/gambar/sahrebook.png');
-                    background-position: center;
-                    background-size: cover;
-                    height: 200px;
-                  "
-                ></div>
-                <div style="margin-left: 15px; position: absolute; bottom: 0px">
-                  <h5 class="card-title text-white">sahrebook.com</h5>
-                  <p
-                    style="margin-top: -10px; font-size: 12px"
-                    class="text-white"
-                  >
-                    selling source code, ebooks and programming video tutorials
-                  </p>
-                </div>
-              </div>
+            <div class="search">
+               <span class="search__icon" id="search-btn">
+                  <i class="fas fw fa-search"></i>
+               </span>
             </div>
-          </div>
-          <div
-            class="col-md-6 wow fadeInRight"
-            data-wow-duration=".5s"
-            data-wow-delay=".5s"
-          >
-            <div class="caption">
-              <h3>Pengalaman di Semua Jenis Website</h3>
-              <p>
-                kami telah menangani berbagai jenis pembuatan website, dari
-                proyek yang mudah hingga yang kompleks, melayani berbagai sektor
-                mulai dari perorangan, organisasi, swasta dan pemerintahan.
-              </p>
-              <p>
-                Lihat daftar aplikasi berbasis website yang telah kami kerjakan
-                melalui link di bawah ini.
-              </p>
-              <a
-                target="_blank"
-                href="portfolio.html"
-                class="btn btn-secondary mt-2"
-                type="button"
-              >
-                Portfolio
-              </a>
+         </div>
+         <form class="search-form" id="search-form">
+            <div class="search-form__container">
+               <input type="text" class="search-form__input" id="input" placeholder="Pencarian game atau voucher">
             </div>
-          </div>
-        </div>
+         </form>
       </div>
-    </section>
+   </header>
 
-    <section id="prices">
-      <div class="container">
-        <div class="row">
-          <!-- /// Title /// -->
-          <div
-            class="col-md-6 col-sm-offset-2 col-md-offset-3 text-center mx-auto"
-          >
-            <h2 class="section-title">harga</h2>
-            <p>
-              Buat website disini mulai dari 1,5 juta aja. Proses cepat,
-              bergaransi dan boleh revisi selama 1 minggu
-            </p>
-          </div>
-        </div>
-        <style>
-          th,
-          td {
-            white-space: nowrap;
-          }
-        </style>
-        <div class="table-responsive">
-          <table class="bg-white table table-bordered table-striped">
-            <thead class="bg-primary text-white">
-              <tr>
-                <th style="width: 17%">Tipe</th>
-                <th style="width: 18%">Harga</th>
-                <th style="width: 25%">Jenis Website</th>
-                <th style="width: 40%">Fitur</th>
-              </tr>
-            </thead>
-            <tbody class="text-dark">
-              <tr>
-                <td>Dasar</td>
-                <td>Rp 1.5 jt</td>
-                <td class="text-left">
-                  <ul>
-                    <li>Company Profile</li>
-                    <li>Website Berita</li>
-                    <li>website catalogue</li>
-                  </ul>
-                </td>
-                <td class="text-left">
-                  <ul>
-                    <li>Free Sewa Hosting dan Domain 1 Tahun</li>
-                    <li>Free Garansi dan Revisi 1 Minggu</li>
-                    <li>
-                      Get 5 Halaman Depan (Halaman Utama, <br />
-                      Berita, About, Detail Berita, Produk)
-                    </li>
-                    <li>
-                      Get 5 Halaman Admin (Kelola User, Kelola <br />
-                      Berita, Kelola About, Kelola Produk, Statistik)
-                    </li>
-                    <li>Bebas Pilih Desain</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>Custom</td>
-                <td>Rp 1.6 jt s/d ????</td>
-                <td class="text-left">
-                  <ul>
-                    <li>
-                      Company Profile <br />
-                      Custom <b>(1.6 jt - 2.5 jt)</b>
-                    </li>
-                    <li>
-                      Website Berita <br />
-                      Custom <b>(1.6 jt - 2.5 jt)</b>
-                    </li>
-                    <li>
-                      website catalogue <br />
-                      Custom <b>(1.6 jt - 2.5 jt)</b>
-                    </li>
-                    <li>
-                      E-Learning <br />
-                      Custom <b>(2.5 jt - 5 jt)</b>
-                    </li>
-                    <li>
-                      Absensi Online <br />
-                      Custom <b>(2 jt - 2.5 jt)</b>
-                    </li>
-                    <li>
-                      Aplikasi Akuntansi <br />
-                      Custom <b>(2.5 jt - 5 jt)</b>
-                    </li>
-                    <li>
-                      Ujian Online <br />
-                      Custom <b>(2.5 jt - 5 jt)</b>
-                    </li>
-                    <li>
-                      Sistem Informasi <br />
-                      Custom <b>(2.5 jt - 10 jt)</b>
-                    </li>
-                    <li>
-                      DLL <br />
-                      Custom <b>(1.6 jt - ????)</b>
-                    </li>
-                  </ul>
-                </td>
-                <td class="text-left">
-                  <ul>
-                    <li>Free Sewa Hosting dan Domain 1 Tahun</li>
-                    <li>Free Garansi dan Revisi 1 Minggu</li>
-                    <li>Harga Menyesuaikan Fitur dan Halaman</li>
-                    <li>Bebas Pilih Desain</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>Perpanjangan</td>
-                <td>Rp 500 rb</td>
-                <td class="text-left">
-                  <ul>
-                    <li>Semua Jenis Website</li>
-                  </ul>
-                </td>
-                <td class="text-left">
-                  <ul>
-                    <li>
-                      Perpanjangan Sewa Hosting dan <br />
-                      Domain selama 1 Tahun
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <br /><br />
+   <!-- Banner -->
+   <section class="banner">
+      <div class="banner__container">
+         <div class="banner__slide">
+            <img src="./img/banner/mlbb_50dpromo_id.jpg" class="banner__img" alt="">
+         </div>
+         <div class="banner__slide">
+            <img src="./img/banner/pubg_promo_id.jpg" class="banner__img" alt="">
+         </div>
+         <div class="banner__slide">
+            <img src="./img/banner/msw_promo_id.jpg" class="banner__img" alt="">
+         </div>
+         <div class="banner__slide">
+            <img src="./img/banner/la_promo_id.jpg" class="banner__img" alt="">
+         </div>
+         <div class="banner__slide">
+            <img src="./img/banner/hago_promo_id.jpg" class="banner__img" alt="">
+         </div>
       </div>
-    </section>
-    <div id="desain"></div>
-    <br /><br /><br /><br />
-    <div class="container">
-      <div class="text-center">
-        <h1 class="text-dark">Desain</h1>
-        <h6>
-          Beragam Pilihan Template dan Desain <br />
-          Sebagai Inspirasi Website Anda
-        </h6>
-      </div>
-      <br /><br />
-      <div class="row">
-        <div class="col-lg-3 mb-4">
-          <div class="card bg-info">
-            <div
-              class="card-body"
-              style="
-                background-image: url('desain/tema1.png');
-                background-position: center;
-                background-size: cover;
-                height: 200px;
-              "
-            ></div>
-            <a href="https://themewagon.github.io/solartec/" target="_blank">
-              <button
-                href="#"
-                style="font-size: 12px"
-                class="btn btn-info btn-sm"
-              >
-                <i class="bi bi-eye"></i> Preview
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="card bg-info">
-            <div
-              class="card-body"
-              style="
-                background-image: url('desain/tema2.jpg');
-                background-position: center;
-                background-size: cover;
-                height: 200px;
-              "
-            ></div>
-            <a
-              target="_blank"
-              href="https://demos.creative-tim.com/soft-ui-design-system/index.html?_ga=2.215992784.678250890.1705240562-807710120.1705240562"
-            >
-              <button style="font-size: 12px" class="btn btn-info btn-sm">
-                <i class="bi bi-eye"></i> Preview
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="card bg-info">
-            <div
-              class="card-body"
-              style="
-                background-image: url('desain/tema3.jpg');
-                background-position: center;
-                background-size: cover;
-                height: 200px;
-              "
-            ></div>
-            <a
-              target="_blank"
-              href="https://demos.creative-tim.com/material-kit/index.html?_ga=2.10005746.678250890.1705240562-807710120.1705240562"
-            >
-              <button
-                href="#"
-                style="font-size: 12px"
-                class="btn btn-info btn-sm"
-              >
-                <i class="bi bi-eye"></i> Preview
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="card bg-info">
-            <div
-              class="card-body"
-              style="
-                background-image: url('desain/tema4.png');
-                background-position: center;
-                background-size: cover;
-                height: 200px;
-              "
-            ></div>
-            <a target="_blank" href="airportslab.com">
-              <button style="font-size: 12px" class="btn btn-info btn-sm">
-                <i class="bi bi-eye"></i> Preview
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="card bg-info">
-            <div
-              class="card-body"
-              style="
-                background-image: url('desain/tema5.png');
-                background-position: center;
-                background-size: cover;
-                height: 200px;
-              "
-            ></div>
-            <a href="https://porkaone.com" target="_blank">
-              <button style="font-size: 12px" class="btn btn-info btn-sm">
-                <i class="bi bi-eye"></i> Preview
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="card bg-info">
-            <div
-              class="card-body"
-              style="
-                background-image: url('gambar/sungky.png');
-                background-position: center;
-                background-size: cover;
-                height: 200px;
-              "
-            ></div>
-            <a target="_blank" href="https://sungky.com">
-              <button style="font-size: 12px" class="btn btn-info btn-sm">
-                <i class="bi bi-eye"></i> Preview
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="card bg-info">
-            <div
-              class="card-body"
-              style="
-                background-image: url('desain/tema6.jpg');
-                background-position: center;
-                background-size: cover;
-                height: 200px;
-              "
-            ></div>
-            <a
-              href="https://technext.github.io/beam/index.html"
-              target="_blank"
-            >
-              <button
-                href="#"
-                style="font-size: 12px"
-                class="btn btn-info btn-sm"
-              >
-                <i class="bi bi-eye"></i> Preview
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="card bg-info">
-            <div
-              class="card-body"
-              style="
-                background-image: url('gambar/sipencatar.png');
-                background-position: center;
-                background-size: cover;
-                height: 200px;
-              "
-            ></div>
-            <a href="https://sipencatar.poltekbangplg.ac.id/" target="_blank">
-              <button
-                href="#"
-                style="font-size: 12px"
-                class="btn btn-info btn-sm"
-              >
-                <i class="bi bi-eye"></i> Preview
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <a href="desain.html">
-        <h4 class="mt-4 text-center">
-          Lihat Template Lainnya <i class="bi bi-arrow-right"></i>
-        </h4>
-      </a>
-    </div>
+   </section>
 
-    <br /><br /><br /><br />
-    <div class="container text-center" id="contak">
-      <h1 class="text-dark">Our Contact</h1>
-      <h6>Hubungi kami untuk penawaran terbaik</h6>
-    </div>
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-lg-4">
-          <h6><i class="bi bi-whatsapp"></i> Whatsapp</h6>
-          <p>081271449921</p>
-          <hr />
-          <h6><i class="bi bi-envelope"></i> Email</h6>
-          <p>escendol900@gmail.com</p>
-          <hr />
-          <h6><i class="bi bi-instagram"></i> Instagram</h6>
-          <p>@nabil_chen</p>
-          <hr />
-          <h6><i class="bi bi-globe"></i> Website Lainnya</h6>
-          <p>sahretech.com</p>
-          <hr />
-          <h6><i class="bi bi-linkedin"></i> Linkedin</h6>
-          <p>Nabil Putra</p>
-        </div>
-        <div class="col-lg-8">
-          <iframe
-            style="border-radius: 20px; border: none"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.42584644581!2d104.68056194891258!3d-2.954965499373861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e8fc27a3e3%3A0x3039d80b220d0c0!2sPalembang%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1701311193695!5m2!1sid!2sid"
-            width="100%"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+   <!-- Category 1 Category Popular -->
+   <section class="category category--1">
+      <div class="category__container">
+         <h1 class="category__title">Populer</h1>
+         <div class="category__product">
+            <a href="#" class="category__product-container">
+               <img src="./img/game/mlbb_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Mobile Legends</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/freefire_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Free Fire</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/PUBG_RPS11_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">PUBG Mobile</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/lor_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Legends of Runeterra</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/codm_id_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Call of Duty Mobile</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/hago_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">HAGO</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/idle_legends_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Idle Legends</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/The_World_Of_Dragon_Nest.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">World of Dragon Nest</p>
+            </a>
+         </div>
       </div>
-    </div>
+   </section>
 
-    <br /><br /><br />
-    <hr />
-    <br />
-    <div class="text-center">
-      Developed with love by Nabil Putra. Visit sahretech.com
-    </div>
-    <br />
+   <!-- Category 2 Category Top-Up Game -->
+   <section class="category category--2">
+      <div class="category__container">
+         <h1 class="category__title">Top-Up Game Langsung</h1>
+         <div class="category__product">
+            <a href="#" class="category__product-container">
+               <img src="./img/game/ml_adventure_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Mobile Legends: Adventure</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/ragnarok_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Ragnarok M</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/MARVELsuperwar_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">MARVEL Super War</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/honkaiimpact3_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Honkai Impact 3</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/PointBlank_ID_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Point Blank</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/Blockman Go_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Blockman Go: Blocky Mods</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/aov_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">AOV</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/gameofsultans_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Game of Sultans</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/chessrush_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Chess Rush</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/pubgm_lite_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">PUBG Mobile Lite</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/onmyojiarena_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Onmyoji Arena</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/lordsmobile_tile.jpeg" class="category__product-img" alt="">
+               <p class="category__product-title">Lord Mobile</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/YongHeroes_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Young Heroes</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/CrasherOrigin_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Crasher: Origin</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/lumiasaga_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Lumia Saga</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/devilhunter_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Devil Hunter</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/last_empire_war_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Last Empire War Z</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/love_nikki_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Love Nikki</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/crisis_action_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Crisis Action</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/speed_drifter_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Speed Drifter</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/LightofThel_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Light of Thel:Glory of Cepheus</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/higgs_domino_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Higgs Domino</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/kingsofkings_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">King of Kings</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/mu_origin_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">MU Origin 2</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/legacy_of_discord_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Legacy of Discord</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/disorder_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Disorder</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/dominoqq_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Domino Qiu Qiu</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/domino99_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Domino Qiu Qiu: Domino 99</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/pokertexas_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Poker Texas Boyaa</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/game/wor_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">War of Rings</p>
+            </a>
+         </div>
+      </div>
+   </section>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Popper.js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap JS -->
-    <script src="bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
-    <!-- Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/vivid-icons"></script>
-    <script src="https://unpkg.com/vivid-icons"></script>
-    <!-- OWL Carousel -->
-    <script src="js/plugins/owl-carousel/owl.carousel.js"></script>
-    <!-- Video Pop Up Plugin -->
-    <script src="js/plugins/YouTube_PopUp-master/YouTubePopUp.jquery.js"></script>
-    <script src="js/plugins/wow/wow.min.js"></script>
-    <!-- Easing -->
-    <script src="js/plugins/jquery.easing.min.js"></script>
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
-    <!-- Default Statcounter code for Jasa Pembuatan Website
-https://nabilchen96.github.io/jasa-pembuatan-website -->
-    <script type="text/javascript">
-      var sc_project = 12958694;
-      var sc_invisible = 1;
-      var sc_security = "c0e15eef";
-    </script>
-    <script
-      type="text/javascript"
-      src="https://www.statcounter.com/counter/counter.js"
-      async
-    ></script>
-    <noscript
-      ><div class="statcounter">
-        <a
-          title="Web Analytics
-  Made Easy - Statcounter"
-          href="https://statcounter.com/"
-          target="_blank"
-          ><img
-            class="statcounter"
-            src="https://c.statcounter.com/12958694/0/c0e15eef/1/"
-            alt="Web Analytics Made Easy - Statcounter"
-            referrerpolicy="no-referrer-when-downgrade"
-        /></a></div
-    ></noscript>
-    <!-- End of Statcounter Code -->
-  </body>
+   <!-- Category 3 Category Top-Up Video -->
+   <section class="category category--3">
+      <div class="category__container">
+         <h1 class="category__title">Top-Up Video Langsung</h1>
+         <div class="category__product">
+            <a href="#" class="category__product-container">
+               <img src="./img/streamapp/bigo_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Bigo Live</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/streamapp/likee_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Likee</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/streamapp/starmaker_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">StarMaker</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/streamapp/yome_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Yome Live</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/streamapp/livu_promo_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">LivU</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/streamapp/tumile_promo_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Tumile</p>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Category 4 Category Code Voucer -->
+   <section class="category category--3">
+      <div class="category__container">
+         <h1 class="category__title">Beli Kode Voucer</h1>
+         <div class="category__product">
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/gp_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Google Play Code</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/steam_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Steam Wallet Code</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/psn_store_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">PlayStation PSN Card</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/tinder_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Tinder</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/spotify_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Spotify Premium Voucher</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/PUBG_RPS11_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">PUBG Mobile UC Redeem Code</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/garena_shells_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Garena Shells</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/megaxus_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Megaxus</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/gemscool_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Gemscool</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/nintendoeshop_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Nintendo eShop (US)</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/xboxgiftcard_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Xbox Gift Card (US)</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/FIFA_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Fifa Points Voucher</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/viu_tile.jpg" class="category__product-img" alt="">
+               <p class="category__product-title">Viu</p>
+            </a>
+            <a href="#" class="category__product-container">
+               <img src="./img/codevoucer/vidio_tile.png" class="category__product-img" alt="">
+               <p class="category__product-title">Vidio</p>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- About -->
+   <section class="about">
+      <div class="about__container">
+         <h1 class="about__title">Codashop: Website top-up terbesar & terpercaya di Indonesia</h1>
+         <p class="about__description">
+            Setiap bulannya, jutaan gamers menggunakan Codashop untuk melakukan pembelian kredit game dengan lancar:
+            tanpa registrasi ataupun log-in, dan kredit permainan akan ditambahkan secara instan. Top-up Mobile Legends,
+            Free Fire, Ragnarok M, dan berbagai game lainnya!
+         </p>
+         <ul class="card">
+            <li class="card__item">
+               <div class="card__img">
+                  <img src="img/icons/pay_in_seconds.png" alt="" class="card__icon">
+               </div>
+               <div class="card__content">
+                  <h3 class="card__title">Bayar dalam hitungan detik</h3>
+                  <p class="card__description">
+                     Hanya dibutuhkan beberapa detik saja untuk menyelesaikan pembayaran di Codashop karena situs kami
+                     berfungsi dengan baik dan mudah untuk digunakan.
+                  </p>
+               </div>
+            </li>
+            <li class="card__item">
+               <div class="card__img">
+                  <img src="img/icons/fast_delivery.png" alt="" class="card__icon">
+               </div>
+               <div class="card__content">
+                  <h3 class="card__title">Pengiriman Instan</h3>
+                  <p class="card__description">
+                     Ketika kamu melakukan top-up di Codashop, item atau barang yang kamu beli akan selalu dikirim ke
+                     akun kamu secara instan dan cepat, tanpa tertunda.
+                  </p>
+               </div>
+            </li>
+            <li class="card__item">
+               <div class="card__img">
+                  <img src="img/icons/best_payment_method.png" alt="" class="card__icon">
+               </div>
+               <div class="card__content">
+                  <h3 class="card__title">Metode pembayaran terbaik</h3>
+                  <p class="card__description">
+                     Kami menawarkan begitu banyak pilihan pembayaran mulai dari potong pulsa, e-wallet, bank transfer,
+                     dan pembayaran di mini market terdekat.
+                  </p>
+               </div>
+            </li>
+            <li class="card__item">
+               <div class="card__img">
+                  <img src="img/icons/24h_support.png" alt="" class="card__icon">
+               </div>
+               <div class="card__content">
+                  <h3 class="card__title">Bantuan 24 jam</h3>
+                  <p class="card__description">
+                     Tim kami tersedia selama 24 jam selama 7 hari penuh dalam seminggu untuk menjawab
+                     pertanyaan-pertanyaan kamu. Kami akan terus bekerja keras meningkatkan pelayanan kami :)
+                  </p>
+               </div>
+            </li>
+            <li class="card__item">
+               <div class="card__img">
+                  <img src="img/icons/promo.png" alt="" class="card__icon">
+               </div>
+               <div class="card__content">
+                  <h3 class="card__title">Promosi-promosi menarik</h3>
+                  <p class="card__description">
+                     Penggemar game dapat bergantung pada Codashop karena kami memberikan penawaran menarik, diskon dan
+                     kode item dari promosi game yang disukai kamu.
+                  </p>
+               </div>
+            </li>
+         </ul>
+      </div>
+   </section>
+
+   <!-- News -->
+   <section class="news">
+      <div class="news__container">
+         <h1 class="news__header">NEWS & PROMOTIONS</h1>
+         <div class="news__card">
+            <img src="./img/waspada_penipuan.jpg" class="news__img" alt="">
+            <div class="news__card-body">
+               <h4 class="news__title">Waspada Penipuan APK!</h4>
+               <p class="news__description">Pengumuman penting dari Codashop</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="footer__container">
+         <div class="footer__content">
+            <section class="left-content">
+               <div class="social">
+                  <h5 class="social__title">Dapatkan berita Coda di:</h5>
+                  <div class="social__content">
+                     <a href="#" class="social__link">
+                        <img src="./img/socmed/socmed-facebook-H36.png" class="social__icon" alt="">
+                     </a>
+                     <a href="#" class="social__link">
+                        <img src="./img/socmed/socmed-youtube-H36.png" class="social__icon" alt="">
+                     </a>
+                     <a href="#" class="social__link">
+                        <img src="./img/socmed/socmed-instagram-H36.png" class="social__icon" alt="">
+                     </a>
+                  </div>
+               </div>
+               <div class="support">
+                  <h5 class="support__title">Butuh Bantuan?</h5>
+                  <a href="#" class="support__link">
+                     <img src="./img/support.png" class="support__img" alt="">
+                     <span class="support__text">Hubungi Kami</span>
+                  </a>
+               </div>
+               <div class="country">
+                  <img src="./img/indonesia.png" class="country__img" alt="">
+                  <h5 class="country__title">Indonesia</h5>
+               </div>
+            </section>
+            <section class="right-content">
+               <div class="legal-content">
+                  <a href="#" class="legal-content__text">Syarat & Ketentuan</a>
+                  <a href="#" class="legal-content__text">Kebijakan Privasi</a>
+                  <p class="legal-content__copyright">&copy; Hak Cipta Coda Payments</p>
+               </div>
+            </section>
+         </div>
+      </div>
+   </footer>
+
+   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+   <script src="./vendor/slick/slick.min.js"></script>
+   <script src="./js/app.js"></script>
+</body>
+
 </html>
